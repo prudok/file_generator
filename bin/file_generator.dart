@@ -67,7 +67,8 @@ Future<void> runSchedule({required String directoryName}) async {
       exit(0);
     }
   } catch (error) {
-    stdout.write('Ошибка обработки запроса. Пожалуйста, ознакомьтесь с README.md этого CLI.');
+    stdout.write('Ошибка обработки запроса. Пожалуйста, ознакомьтесь с README.md этого CLI.\n');
+    stdout.write(error);
     exit(0);
   }
 }
